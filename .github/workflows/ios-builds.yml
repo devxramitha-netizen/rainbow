@@ -78,6 +78,7 @@ jobs:
     name: Post Builds
     needs: [build-simulator, build-device]
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       actions: read
       pull-requests: write
